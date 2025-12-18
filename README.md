@@ -11,5 +11,5 @@ The second part of this project cracks encrypted text without knowing the key. I
 The cracking process works as follows: an initial substitution is performed based on letter frequency analysis, then an automatic correction step is applied to improve accuracy because real text frequencies differ from theoretical ones. After each correction, the program checks whether the number of recognized dictionary words has increased. If it has not, the correction is undone and another variant is tried. Longer words (more than five letters) are prioritized during recognition because short words are more likely to be misidentified.
 
 Both encryption/decryption and cracking operate strictly through files: input text from a file, output to another file, and keys from the keyboard or a key file. 
-Libraries needed: pip install random and string!
+Libraries needed: pip3 install random!
 Language supported: English only.
