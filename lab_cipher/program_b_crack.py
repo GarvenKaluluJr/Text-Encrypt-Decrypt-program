@@ -129,7 +129,7 @@ def main() -> None:
     first_score = recognized_long_word_count(first_plain, dictionary)
 
     # Automatic correction step (must increase recognized words, otherwise undone)
-    improved = improve_mapping_with_corrections(ciphertext, dictionary, mapping)
+    improved = improve_mapping_with_corrections(ciphertext, dictionary, mapping, attempts=20000)
     final_plain = apply_mapping(ciphertext, improved)
     final_score = recognized_long_word_count(final_plain, dictionary)
 
